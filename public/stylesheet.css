@@ -1,0 +1,483 @@
+
+.websiteCoverPic{
+background: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFdcqg7Vnev0fcTSAJdIoJMfPHfqYa7IxunIvDHm9ohIMf6T_NYg");
+background-size: 100% 100%;
+}
+.websiteCoverPic .fullplace{
+	color: #DCF70C;
+}
+.websiteCoverPic .textDesign{
+
+color: white;
+}
+
+.navbar-brand{
+	font-family: 'Slabo 27px', serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+nav{
+	margin-top: 10px;
+
+}
+nav ul {
+	padding-right: 18px;
+}
+.navbar-nav{
+    
+	font-family: 'Slabo 27px', serif;
+
+}
+
+.search{
+	font-family: 'Droid Serif', serif;
+	
+}
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    border-radius: 25px;
+
+}
+.marquee{
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+	width: 100%;
+	color: #e3ff00;
+	font-size: 120%;
+}
+
+.slider img{
+	border:5px solid white;
+	padding-left: 0px;
+}
+.carousel-inner > .item > img{
+       width:1200px;
+       height:500px;
+     }
+ @media (min-width: 768px) and (max-width: 979px) {
+    .carousel-inner > .item > img{
+       width:100%;
+       height:350px;
+     }
+
+ }
+  @media (min-width: 360px) and (max-width: 767px) {
+    .carousel-inner > .item > img{
+       width:100%;
+       height:220px;
+     }
+     .item h3{
+     	font-size: 94%;
+     }
+
+ }
+ @media (min-width: 320px) and (max-width: 359px) {
+    .carousel-inner > .item > img{
+       width:100%;
+       height:200px;
+     }
+      .item h3{
+     	font-size: 92%;
+     }
+
+ }
+
+.slider h3 small{
+	font-family: 'Raleway', sans-serif;
+}
+#carouShowHide{
+	display: none;
+}
+.first_item{
+	border:2px solid white;
+	background-color:#00e6e6;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+
+}
+.rating h4{
+	font-family: 'Droid Serif', serif;
+	font-weight: bold;
+}
+#mainimg{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+#mainimg1{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+#mainimg2{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+#mainimg3{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+#mainimg4{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+#mainimg5{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+#mainimg6{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+#mainimg7{
+	border:3px solid white;
+	height: 170px;
+	width: 100%;
+}
+ #imgStyle{
+	border:3px solid white;
+	height: 60px;
+	width: 62.5px;
+}
+  @media (min-width: 768px) and (max-width: 979px) {
+    #imgStyle{
+	border:3px solid white;
+	height: 62px;
+	width: 67.6px;
+}
+ }
+  @media (min-width: 360px) and (max-width: 767px) {
+    #imgStyle{
+	border:3px solid white;
+	height: 62px;
+	width: 64.5px;
+}
+ }
+  @media (min-width: 320px) and (max-width: 359px) {
+    #imgStyle{
+	border:3px solid white;
+	height: 54px;
+	width: 56px;
+}
+ }
+   @media (min-width: 980px) and (max-width: 1279px) {
+    #imgStyle{
+	border:3px solid white;
+	height: 62px;
+	width: 67.6px;
+}
+ }
+   
+
+.second_item{
+	border:2px solid white;
+	background-color: #4caf50;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+}
+.third_item{
+	border:2px solid white;
+	background-color: #008080;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+}
+.fourth_item{
+	border:2px solid white;
+	background-color: #e0e0e0;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+}
+.fifth_item{
+	border:2px solid white;
+	background-color: #C36241;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+
+}
+.sixth_item
+{
+	border:2px solid white;
+	background-color: #4E9258;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+}
+.seventh_item{
+	border:2px solid white;
+	background-color: #7F462C;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+}
+.eighth_item{
+	border:2px solid white;
+	background-color: #C74646;
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: white;
+}
+.textDesign{
+	
+  font-family: 'Raleway', sans-serif;
+	word-spacing: 1px;
+  line-height: 100%;
+}
+.glyphicon-star{
+	color:#F7EC0C;
+}
+.glyphicon-star-empty{
+	color:#F7EC0C;
+}
+.footer{
+	font-family: 'Slabo 27px', serif;
+	font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+label{
+	color:white;
+}
+.contpage{
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+.alert{
+	font-family: 'BenchNine', sans-serif;
+	background-color: white;
+	color: #F75D59;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 120%;
+}
+.success{
+	font-family: 'BenchNine', sans-serif;
+	background-color: white;
+	text-align: center;
+	margin-top: 20px;
+	color: #00b0ff;
+	font-size: 120%;
+}
+#map{
+	height: 400px;
+	margin-top: 15px;
+	border:3px solid white;
+	margin-bottom: 10px;
+}
+hr{
+	border:1px solid white;
+}
+.address{
+	background-color: white;
+	
+	height: 200px;
+	border:2px solid grey;
+	margin-top: 90px;
+	
+	}
+	.address h3{
+		text-align: center;
+	    font-family: 'Slabo 27px', serif;
+	    font-weight: bold;
+	    }
+	    .address small{
+	    	font-family: 'Droid Serif', serif;
+	    }
+	.address hr{
+		border:1px solid black;
+		margin-left: 30px;
+	}
+	.address h5{
+		text-align: center;
+		font-family: 'Droid Serif', serif;
+	}
+	.contwell{
+		margin-top: 15px;
+		background-color: white;
+		text-align: center;
+		font-family: 'Lobster', cursive;
+	}
+	.fullplace{
+		padding-left: 15px;
+		font-weight: bold;
+		font-family: 'Raleway', sans-serif;
+    
+	}
+  .relativePlaceHeader{
+    padding-left: 11px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: #DCF70C;
+  }
+	
+	#related_place_pic_design{
+		width: 230px;
+		height: 190px;
+		border:1px solid white;
+	}
+   #full_place_image{
+   	width: 400px;
+   	height: 250px;
+   	margin-top: 40px;
+   }
+   
+   #user_feedback_characters{
+   	color:#F75D59;
+   	
+   }
+   .fa-asterisk{
+   	color:#F75D59;
+   	font-size: 100%;
+   }
+   .location{
+   	padding-left: 10px;
+   	font-family: 'Droid Serif', serif;
+   	font-weight: bold;
+   	color: white;
+   }
+   #map_cox{
+   	margin-top: 15px;
+   	height:350px;
+   }
+   #map_shundarban{
+   	margin-top: 15px;
+   	height:350px;
+   }
+   #map_saint{
+   	margin-top: 15px;
+   	height:350px;
+   }
+   #map_bandharban{
+   	margin-top: 15px;
+   	height:350px;
+   }
+   .login{
+   	background-color: #fff;
+   	color: #263238;
+   	margin-bottom: 10px;
+   	
+   	font-family: 'Lobster', cursive;
+   }
+   .loginDiv h3{
+   	padding-top: 5px;
+   	height: 100%;
+   	background-color:  #607d8b;
+   	font-family: 'Lobster', cursive;
+   	color: #fff;
+   	text-align: center;
+   	padding-bottom: 10px;
+   }
+  
+
+   .login form{
+      padding-top: 15px;
+
+   }
+
+   .login h4{
+   	font-family: 'Droid Serif', serif;
+   	
+   	padding-top: 10px;
+   }
+    input.button{
+   	background-color: #ff5252;
+   	color: white;
+   	font-size: 125%;
+   	
+   	width: 225px;
+   	height: 40px;
+   }
+ @media (min-width: 320px) and (max-width: 767px) {
+ input.button{
+   	background-color: #ff5252;
+   	color: white;
+   	font-size: 125%;
+   	width: 200px;
+   	height: 40px;
+   }
+ }
+   input.fontstyle{
+   	font-family: 'BenchNine', sans-serif;
+   	font-size: 120%;
+   }
+   input.fontstyle1{
+   	font-family: 'BenchNine', sans-serif;
+   	font-size: 110%;
+   }
+   .login label{
+   	color:#616161;
+   	font-size: 110%;
+   }
+   .loginAndSignupAlert{
+   	font-family: 'BenchNine', sans-serif;
+	background-color:#7c2b43;
+	color:#fff;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 120%;
+   }
+   .join{
+   	text-align:center;
+   	padding-top: 10px;
+   	font-family: 'Droid Serif', serif;
+   	padding-bottom: 10px;
+   }
+   .join a{
+   	color: #263238;
+   }
+    .signup{
+    background-color: #fff;
+   	color: #263238;
+   	margin-bottom: 10px;
+   	font-family: 'BenchNine', sans-serif;
+
+   	
+   }
+    .signupDiv h3{
+    padding-top: 5px;
+   	height: 100%;
+   	background-color:  #607d8b;
+   	font-family: 'Lobster', cursive;
+   	color: #fff;
+   	text-align: center;
+   	padding-bottom: 10px;
+   }
+   .signup label{
+   	color:#616161;
+   	font-size: 110%;
+   }
+
+   .signup h4{
+   	font-family: 'Droid Serif', serif;
+   	
+   	padding-top: 10px;
+   }
+   .signupDiv a{
+   	color:white;
+   }
+   .signupSuccess{
+   	font-family: 'BenchNine', sans-serif;
+   	text-align: center;
+   	font-size: 120%;
+   	color:white;
+   	background-color: #43a047;
+
+   }
+   .ratingPlace{
+   	padding-bottom: 15px;
+   }
+   	
+   
