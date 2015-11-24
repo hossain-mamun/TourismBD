@@ -1,7 +1,20 @@
 
 $(document).ready(function(){
        $(".fancybox").fancybox();
+       $('#facebook').hover(function(){
+       $('#facebook').addClass('animated pulse');
+       });
+       $('#twitter').hover(function(){
+       $('#twitter').addClass('animated pulse');
+       });
+       $('#googleplus').hover(function(){
+       $('#googleplus').addClass('animated pulse');
+       });
+       $('#linkedin').hover(function(){
+       $('#linkedin').addClass('animated pulse');
+       });
     });
+
 
 
 $(document).ready(function(){
@@ -62,6 +75,7 @@ $('#loginName').mouseout(function(){
 $('#loginName').css('font-size','100%');
 
 });
+
 $('#divcontainer img').on({
 	mouseover:function(){
 		$(this).css({

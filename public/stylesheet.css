@@ -25,7 +25,7 @@ nav ul {
 }
 .navbar-nav{
     
-	font-family: 'Slabo 27px', serif;
+	font-family: 'Raleway', sans-serif;
 
 }
 
@@ -42,11 +42,12 @@ input.empty {
 
 }
 .marquee{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Droid Serif', serif;
 	height: 100%;
 	width: 100%;
 	color: #e3ff00;
-	font-size: 120%;
+	font-size: 100%;
+
 }
 
 .slider img{
@@ -242,11 +243,66 @@ input.empty {
 	color:#F7EC0C;
 }
 .footer{
-	font-family: 'Slabo 27px', serif;
-	font-size: 20px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.footerBg{
+  background-color:#2D2D2D;
+}
+/* Social Link Style*/
+#socialLink{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+
+}
+.list-inline #facebook{
+  
+  height: 37px;
+  width:40px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: #3f51b5;
+  border-radius: 5px;
+}
+.fa-facebook{
+  color: white;
+
+}
+.list-inline #twitter{
+  height: 37px;
+  width:40px;
+  padding-top: 8px;
+  text-align: center;
+  background-color:  #2196f3;
+  border-radius: 5px;
+}
+.fa-twitter{
+  color: white;
+}
+.list-inline #googleplus{
+  height: 37px;
+  width: 40px;
+  padding-top: 8px;
+  text-align: center;
+  background-color:#e53935;
+  border-radius: 5px;
+}
+.fa-google-plus{
+  color: white;
+}
+.list-inline #linkedin{
+  height: 37px;
+  width: 40px;
+  padding-top: 8px;
+  text-align: center;
+  background-color:#2979ff;
+  border-radius: 5px;
+}
+.fa-linkedin{
+  color: white;
 }
 label{
 	color:white;

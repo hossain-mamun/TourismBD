@@ -21,16 +21,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/bootstrap.min.css");?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/animate.min.css");?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/stylesheet.css");?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/fancyBox/source/jquery.fancybox.css")?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/fonts/font-awesome/css/font-awesome.min.css");?>">
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Rokkitt:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <script type="text/javascript">
+  <link href='https://fonts.googleapis.com/css?family=Rokkitt:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <script type="text/javascript">
     
         function validateForm(){
         var search= document.getElementById('searchBox').value;
@@ -152,13 +153,30 @@
 <!-- Ending the master page concept -->
 	
   <div class="container"> <!-- Now the footer starting -->
-   <div class="navbar navbar-inverse" role="navigation">
+   <div class="navbar footerBg" role="navigation">
     <div class="container">
-
-    <div class="navbar-header">
-      <div class="navbar-brand "></div> </div>
-   <!--nav-collapse --> 
- <h3 class="footer">&copy; Hossain Mamun <?php echo date("Y"); ?></h3>
+     <div class="row">
+      <div class="col-sm-6 col-sm-push-8 ">
+         <h4 id="socialLink">Around the Web</h4>
+          <ul class="list-inline">
+            <li id="facebook">
+             <a href="https://www.facebook.com/mamunh2" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fa-lg"></i></a>
+            </li>
+            <li id="twitter">
+             <a href="https://twitter.com/?lang=en" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter fa-lg"></i></a>
+            </li>
+            <li id="googleplus">
+             <a href="https://plus.google.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus fa-lg"></i></a>
+            </li>
+            <li id="linkedin">
+             <a href="https://www.linkedin.com/hp/?dnr=PseeG1ajiq6LU9HDPM9pz1S4ziCfVckKBXW2" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-sm-pull-6"> 
+        <h4 class="footer">&copy; Hossain Mamun <?php echo date("Y"); ?></h4>
+      </div>
+      </div>
   </div>
    </div>   <!--+++++++++++++++++++++++++-->
  </div>
@@ -173,6 +191,7 @@
 <script type="text/javascript" src="<?php echo base_url("public/fancyBox/lib/jquery-1.10.1.min.js");?>"></script>
 <script type="text/javascript" src="<?php echo base_url("public/fancyBox/lib/jquery.mousewheel-3.0.6");?>"></script>
 <script type="text/javascript" src="<?php echo base_url("public/fancyBox/source/jquery.fancybox.pack.js");?>"></script>
+
 
 
 </body>
