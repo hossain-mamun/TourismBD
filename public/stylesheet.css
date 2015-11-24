@@ -258,6 +258,18 @@ input.empty {
   font-weight: bold;
 
 }
+#forum h4{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+
+}
+#forum ul li  {
+  color: white;
+}
+#forum ul li a{
+  color: white;
+}
 .list-inline #facebook{
   
   height: 37px;
@@ -492,7 +504,7 @@ hr{
    	padding-bottom: 10px;
    }
    .join a{
-   	color: #263238;
+   	color: #0ce19b;
    }
     .signup{
     background-color: #fff;
