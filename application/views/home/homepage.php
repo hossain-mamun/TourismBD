@@ -19,8 +19,7 @@
     
     ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/bootstrap.min.css");?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/bootstrap.min.css");?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/animate.min.css");?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/stylesheet.css");?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/fancyBox/source/jquery.fancybox.css")?>">
@@ -48,24 +47,24 @@
 </head>
 <body>
 <div class="websiteCoverPic">
-<div class="container">
- <div class="row logo">
- <div class="col-xs-8 col-sm-4 col-md-3">
- 	<img src="<?php echo base_url("images/bd1.jpg")?>" alt="Logo" class="img-responsive">
- </div>
-	<div class="col-xs-10  col-sm-8 col-md-offset-1 ">
-		<form action="<?php echo site_url("tourism_con/search")?>" method="get" class="navbar-form navbar-right search" role="search" onsubmit="return validateForm();">
-        <div class="form-group">
-          <input type="text" name="search" class="form-control empty" id="searchBox" placeholder="&#xF002;">
-        </div>
-        <input type="submit" class="btn btn-info" value="search">
-      </form>
+ <div class="container">
+  <div class="row logo">
+   <div class="col-xs-8 col-sm-4 col-md-3">
+ 	  <img src="<?php echo base_url("images/bd1.jpg")?>" alt="Logo" class="img-responsive">
+   </div>
+	  <div class="col-xs-10  col-sm-8 col-md-offset-1 ">
+		 <form action="<?php echo site_url("tourism_con/search")?>" method="get" class="navbar-form navbar-right search" role="search" onsubmit="return validateForm();">
+      <div class="form-group">
+       <input type="text" name="search" class="form-control empty" id="searchBox" placeholder="&#xF002;">
+      </div>
+       <input type="submit" class="btn btn-info" value="search">
+    </form>
       <marquee behavior="scroll" class="marquee" scrolldelay='5' scrollamount='2'><p> Most of the pictures are collected from different websites.If you have problem with any particular image so let us know we will remove the image.</p></marquee>
 	</div>
 </div>
 </div>
 <div class="container"><!-- Srating Nav -->
-<nav class="navbar navbar-default nbg" role="navigation">
+ <nav class="navbar navbar-default nbg" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -77,17 +76,13 @@
       </button>
       <a class="navbar-brand" href="<?php echo site_url("tourism_con")?>">Tourism</a>
     </div>
-
-    
-    <div class="navbar-collapse collapse" >
+     <div class="navbar-collapse collapse" >
       <ul class="nav navbar-nav navbar-right">
         <li  id="home"><a href="<?php echo site_url("tourism_con")?>">Home <span class="sr-only">(current)</span></a></li>
         <li id="sitemap"><a href="<?php echo site_url("tourism_con/sitemap")?>">SiteMap</a></li>
         <li id="contactUs"><a href="<?php echo site_url("tourism_con/contact")?>">Contact Us</a></li>
         <?php if (!$this->tourism_model->is_user_logged_in()){?>
-        	
-        
-        <li id="logIn"><a href="<?php echo site_url("tourism_con/login")?>">LogIn</a></li>
+        	<li id="logIn"><a href="<?php echo site_url("tourism_con/login")?>">LogIn</a></li>
         <?php
         }
         ?>
