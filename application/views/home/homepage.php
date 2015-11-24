@@ -59,7 +59,7 @@
       </div>
        <input type="submit" class="btn btn-info" value="search">
     </form>
-      <marquee behavior="scroll" class="marquee" scrolldelay='5' scrollamount='2'><p> Most of the pictures are collected from different websites.If you have problem with any particular image so let us know we will remove the image.</p></marquee>
+      <marquee behavior="scroll" class="marquee" scrollamount='6' scrolldelay='100'><p> Most of the pictures are collected from different websites.If you have problem with any particular image so let us know we will remove the image.</p></marquee>
 	</div>
 </div>
 </div>
@@ -151,7 +151,7 @@
    <div class="navbar footerBg" role="navigation">
     <div class="container">
      <div class="row">
-      <div class="col-sm-6 col-sm-push-8 ">
+      <div class="col-xs-11 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-sm-push-8 ">
          <h4 id="socialLink">Around the Web</h4>
           <ul class="list-inline">
             <li id="facebook">
@@ -168,7 +168,15 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-6 col-sm-pull-6"> 
+        <div class="col-xs-11 col-xs-offset-2 col-sm-4 col-sm-offset-0" id="forum">
+          <h4>Share Your Experiances</h4>
+           <ul>
+             <li>
+               <strong><a href="#">Forums</a><strong>
+             </li>
+           </ul>
+        </div>
+        <div class="col-xs-11 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-sm-pull-8"> 
         <h4 class="footer">&copy; Hossain Mamun <?php echo date("Y"); ?></h4>
       </div>
       </div>

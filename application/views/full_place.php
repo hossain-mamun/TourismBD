@@ -155,7 +155,7 @@ else{
 </html>
 
 	
-	//$main_place_pic=$value->main_place_pic;
+	
 
 
 
