@@ -36,7 +36,7 @@ $(window).scroll(function() {
   }
 });
 $('#home').mouseover(function(){
-$('#home').css('font-size','150%');
+$('#home').css('font-size','125%');
 
 });
 $('#home').mouseout(function(){
@@ -44,7 +44,7 @@ $('#home').css('font-size','100%');
 
 });
 $('#sitemap').mouseover(function(){
-$('#sitemap').css('font-size','150%');
+$('#sitemap').css('font-size','125%');
 
 });
 $('#sitemap').mouseout(function(){
@@ -52,7 +52,7 @@ $('#sitemap').css('font-size','100%');
 
 });
 $('#contactUs').mouseover(function(){
-$('#contactUs').css('font-size','150%');
+$('#contactUs').css('font-size','125%');
 
 });
 $('#contactUs').mouseout(function(){
@@ -60,7 +60,7 @@ $('#contactUs').css('font-size','100%');
 
 });
 $('#logIn').mouseover(function(){
-$('#logIn').css('font-size','150%');
+$('#logIn').css('font-size','125%');
 
 });
 $('#logIn').mouseout(function(){
@@ -68,7 +68,7 @@ $('#logIn').css('font-size','100%');
 
 });
 $('#loginName').mouseover(function(){
-$('#loginName').css('font-size','150%');
+$('#loginName').css('font-size','125%');
 
 });
 $('#loginName').mouseout(function(){

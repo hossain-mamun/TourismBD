@@ -265,10 +265,17 @@ input.empty {
 
 }
 #forum ul li  {
-  color: white;
+  
+  list-style-type:none;
+
 }
+
 #forum ul li a{
   color: white;
+  text-decoration: none;
+}
+#forum ul li a:hover{
+  font-size: 120%;
 }
 .list-inline #facebook{
   
@@ -505,6 +512,7 @@ hr{
    }
    .join a{
    	color: #0ce19b;
+    text-decoration: none ;
    }
     .signup{
     background-color: #fff;

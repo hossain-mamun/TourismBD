@@ -172,7 +172,7 @@
           <h4>Share Your Experiances</h4>
            <ul>
              <li>
-               <strong><a href="#">Forums</a><strong>
+               <strong><a href="#"><i class="fa fa-comments"></i>&nbsp;Forums</a><strong>
              </li>
            </ul>
         </div>
