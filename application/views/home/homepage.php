@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php if (isset($homepage)) {
    echo $homepage;}
     elseif (isset($title)) {
@@ -18,7 +19,7 @@
     }
     
     ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/bootstrap.min.css");?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/animate.min.css");?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/stylesheet.css");?>">
@@ -172,7 +173,7 @@
           <h4>Share Your Experiances</h4>
            <ul>
              <li>
-               <strong><a href="#"><i class="fa fa-comments"></i>&nbsp;Forums</a><strong>
+               <strong><a href="<?php echo site_url('tourism_con/forum');?>"><i class="fa fa-comments"></i>&nbsp;Forums</a><strong>
              </li>
            </ul>
         </div>
