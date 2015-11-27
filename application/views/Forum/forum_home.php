@@ -3,7 +3,15 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forum</title>
+  <title><?php
+   if (isset($forum_title)) {
+   	echo $forum_title;
+   }
+   elseif (isset($newTopic_title)) {
+   	 echo $newTopic_title;
+   }
+
+  ?></title>
    <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/bootstrap.min.css");?>">
    <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/stylesheet.css");?>">
    <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/fonts/font-awesome/css/font-awesome.min.css");?>">
@@ -66,7 +74,7 @@
        <a class=" btn forumCustomButton navbar-right disabled" id="ForumOffline" href="#" role="button">Start New Topic</a>
        <?php }
         else{ ?>
-        	<a class="btn forumCustomButton navbar-right"  href="" role="button">Start New Topic</a>
+        	<a class="btn forumCustomButton navbar-right"  href="<?php echo site_url('tourism_con/startNewTopic');?>" role="button">Start New Topic</a>
         <?php }
 
        ?>
@@ -74,40 +82,23 @@
          <div class="form-group">
           <input type="text" class="form-control" placeholder="Search Topics">
          </div>
-        <button type="submit" class="btn btn-info">Search</button>
+        <button type="submit" class="btn btn-primary">Search</button>
        </form>
        
       </div>
    </div>
   </nav>
-    <?php 
-   for ($i=0; $i <5 ; $i++) { 
-   	
-   
+  <?php
+  if (isset($forumPosts)) {
+  	$this->load->view('Forum/'.$forumPosts);
+  }
+  elseif (isset($startNewTopic)) {
+  	$this->load->view('Forum/'.$startNewTopic);
+  }
+
   ?>
  
-   <div class='container forumBG'>
-    <div class="row">
- 	 <div class="forumPosts col-sm-8 col-sm-offset-1 ">
- 	   <h3><strong>Cox's Bazar Accomadation Facility</strong></h3>
- 	    Written By:<strong> Hossain Mamun</strong><br/>
- 	    Written Time: <strong>25-11-2015</strong>
- 	    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... 
- 	    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage</p>
- 	 </div>
- 	   <div class="col-sm-2 forumComment">
- 		 <div class="row">
- 		  <div class="col-sm-12 forumCommentSub">
- 			<i class="fa fa-comments fa-2x"> 10</i>
- 		  </div>
- 		  <div class="col-sm-12 forumCommentSub">
- 		  	<i class="fa fa-eye fa-2x"> 30</i>
- 		  </div>
- 		 </div>
- 	  </div>
- 	</div>
- </div>
- <?php }?>
+
  </div> 
  
 
