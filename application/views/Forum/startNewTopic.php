@@ -1,4 +1,12 @@
+  
   <div class='container forumBG'>
+     <div class="row forumStartNewTopicwell">
+	  <div class="col-sm-12 ">
+	   <div class="well well-lg">
+	     <h2>Share Your Experiance</h2>
+	   </div>
+	  </div>
+	 </div>
     <div class="row ForumTopicBG">
       <?php
        if (validation_errors()) {?>

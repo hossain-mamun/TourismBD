@@ -138,7 +138,7 @@ class Tourism_con extends CI_Controller
 
 		  	$result=$this->tourism_model->login_check();
 		  	if($result){
-		     redirect('tourism_con');
+		     redirect('tourism_con/forum');
 			}
 			else{
 				$data['login_title']='login failed';
@@ -155,6 +155,93 @@ class Tourism_con extends CI_Controller
 		$this->session->sess_destroy();
 		redirect('tourism_con/?logout=success');
 	}
+	public function forum(){
+		$config['base_url'] = site_url('tourism_con/forum');  
+		$config['total_rows'] = $this->db->get('forum_posts')->num_rows();
+		$config['uri_segment'] = 3;
+		$config['per_page'] = 5; 
+		$config['full_tag_open'] = "<ul class='pagination pagination-lg'>";
+		$config['full_tag_close'] ="</ul>";
+		$config['num_tag_open'] = "<li>";
+		$config['num_tag_close'] = '</li>';
+		$config['cur_tag_open'] = "<li class='disabled'><li class='active'><a href='#'>";
+		$config['cur_tag_close'] = "<span class='sr-only'></span></a></li>";
+		$config['next_tag_open'] = "<li>";
+		$config['next_tagl_close'] = "</li>";
+		$config['prev_tag_open'] = "<li>";
+		$config['prev_tagl_close'] = "</li>";
+		$config['first_tag_open'] = "<li>";
+		$config['first_tagl_close'] = "</li>";
+		$config['last_tag_open'] = "<li>";
+		$config['last_tagl_close'] = "</li>";
+		//$data['forum_contents']=$this->tourism_model->forum_pagination($config);
+		$data['forum_title']='Forum Home';
+		$data['forumPosts']='forumPosts';
+		$data['forum_details']= $this->tourism_model->get_forum_post($config);
+		$this->load->view('Forum/forum_home',$data);
+	}
+	public function full_post_details(){
+		$post_id = $_GET['post_id'];
+		$data['full_post_results']=$this->tourism_model->get_full_post($post_id);
+		$data['all_comments']=$this->tourism_model->get_comments($post_id);
+		$this->tourism_model->post_views($post_id);
+		$data['full_post_details']='full_post_details';
+		$data['full_post_title']='Full Post';
+        $this->load->view('Forum/forum_home',$data);
+       }
+        public function comment_insert(){
+	 	$post_id = $_GET['post_id'];
+	 	$this->tourism_model->comment_insert($post_id);
+	 	$data['all_comments']=$this->tourism_model->get_comments($post_id);
+	 	$data['full_post_results']=$this->tourism_model->get_full_post($post_id);
+		$data['full_post_details']='full_post_details';
+		$data['full_post_title']='Full Post';
+        $this->load->view('Forum/forum_home',$data);
+
+	 }
+	
+	public function forumSignout(){
+		$this->session->unset_userdata('current_user_id');
+		$this->session->unset_userdata('current_user_name');
+		$this->session->sess_destroy();
+		redirect('tourism_con/forum?logout=success');
+	}
+
+	public function startNewTopic(){
+        $data['newTopic_title']='Start New Topic';
+		$data['startNewTopic']='startNewTopic';
+		$data['place_name']=$this->tourism_model->place_name_for_forum();
+		$this->load->view('Forum/forum_home',$data);
+	}
+	public function forum_post_validation(){
+		$this->form_validation->set_rules('topic_title','Topic Title','required');
+		$this->form_validation->set_rules('post','Description','required');
+
+        if ($this->form_validation->run()==FALSE) {
+		   $data['newTopic_title']='Start New Topic';
+	 	   $data['startNewTopic']='startNewTopic';
+	 	   $this->load->view('Forum/forum_home',$data);
+		  }
+
+		  else{
+            $result=$this->tourism_model->forum_post();
+            if ($result) {
+            	$data['forum_details']= $this->tourism_model->get_forum_post($forum_post);
+            	$data['forum_title']='Forum Home';
+		        $data['forumPosts']='forumPosts';
+		        redirect('tourism_con/forum');
+            }
+            else{
+           $data['newTopic_title']='Start New Topic';
+	 	   $data['startNewTopic']='startNewTopic';
+	 	   $data['error']='error has been occured! please rewrite the post';
+	 	   $this->load->view('Forum/forum_home',$data);
+
+            }
+		  }
+
+	}
+
 }
 ?>
 	
