@@ -22,11 +22,11 @@
 	</head>
 	<body>
 	<div class="container-fluid forumHeaderPic">
-		<div class="row">
-			<div class="col-xs-12 ">
-				<img src="<?php echo base_url("images/forum.png")?>" alt="Forum Pic" class="img-responsive">
-			</div>
-		</div>
+	  <div class="row">
+	     <div class="col-xs-12 ">
+	       <img src="<?php echo base_url("images/forum.png")?>" alt="Forum Pic" class="img-responsive">
+	      </div>
+	  </div>
 	</div>
 	<div class="container"><!-- Srating Nav -->
 	 <nav class="navbar navbar-default" role="navigation">
