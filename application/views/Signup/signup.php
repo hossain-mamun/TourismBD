@@ -27,33 +27,37 @@ elseif (isset($error)) {?>
 }
 ?>
  
- <div class="row">
-  <div class="col-sm-12">
-  	<form action="<?php echo site_url('tourism_con/signup_validation')?>" method="post" id="form2">
-    <div class="form-group">
+  <div class="row">
+   <div class="col-sm-12">
+  	 <form action="<?php echo site_url('tourism_con/signup_validation')?>" method="post" id="form2">
+     <div class="form-group">
       <label for="name">Full Name:</label>
-      <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+       <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
          <input type="text" class="form-control fontstyle" name="fullname" id="name" placeholder="Enter Your Name" autofocus="autofocus"/>
        </div>
      </div>
+     
      <div class="form-group">
      	<label for="email"><i class="fa fa-asterisk"></i>Email Address:</label>
-     	<div class="input-group"><span class="input-group-addon"><i class="fa fa-at"></i></span>
+     	 <div class="input-group"><span class="input-group-addon"><i class="fa fa-at"></i></span>
          <input type="email" class="form-control fontstyle" name="email" id="email" placeholder="Enter Your Email"/>
        </div>
      </div>
-      <div class="form-group">
-     	<label for="password"><i class="fa fa-asterisk"></i>Password:</label>
-     	<div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+     
+     <div class="form-group">
+     	 <label for="password"><i class="fa fa-asterisk"></i>Password:</label>
+     	  <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
          <input type="password" class="form-control fontstyle1" name="password" id="password" placeholder="Enter Your Password"/>
        </div>
      </div>
+     
      <div class="form-group">
       <label for="cpassword"><i class="fa fa-asterisk"></i>Confirm Password:</label>
-      <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+       <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
          <input type="password" class="form-control fontstyle1" name="cpassword" id="cpassword" placeholder="Re Enter Your Password"/>
        </div>
      </div>
+     
   	<div class="form-group ">
     <input type="submit" class="button btn col-xs-offset-1 col-sm-offset-2" id="button" value="Continue" name="submit" />
    </div> 
