@@ -1,12 +1,12 @@
   
   <div class='container forumBG'>
      <div class="row forumStartNewTopicwell">
-	  <div class="col-sm-12 ">
+	<div class="col-sm-12 ">
 	   <div class="well well-lg">
 	     <h2>Share Your Experiance</h2>
-	   </div>
-	  </div>
-	 </div>
+	    </div>
+	</div>
+     </div>
     <div class="row ForumTopicBG">
       <?php
        if (validation_errors()) {?>
@@ -24,22 +24,22 @@
      <form action="<?php echo site_url('tourism_con/forum_post_validation');?>" method="post">
  	  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ForumInputDesign">
  	    <div class="form-group ">
-          <input type="text" class="form-control" name="topic_title" id="Topic" placeholder="Enter Topic Title" required/>
-         </div> 
-      </div>
+             <input type="text" class="form-control" name="topic_title" id="Topic" placeholder="Enter Topic Title" required/>
+            </div> 
+         </div>
  	 <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 forumPlaceDropdown ">
-      <div class="form-group">
-        <select class="form-control" id="catg" name="place_select">
-          <option value="">Tourist Place</option>
-          <?php
-             foreach ($place_name as $place_selection) {
-           ?>
-          <option value="<?php echo $place_selection->place_title;?>"><?php echo set_select('place_select', '<?php echo $place_selection->place_title;?>'); ?><?php echo $place_selection->place_title;?></option>
-          <?php }?>
-          <option value="">Others</option>
-        </select>
-      </div>
-    </div>
+          <div class="form-group">
+           <select class="form-control" id="catg" name="place_select">
+            <option value="">Tourist Place</option>
+             <?php
+              foreach ($place_name as $place_selection) {
+             ?>
+            <option value="<?php echo $place_selection->place_title;?>"><?php echo set_select('place_select', '<?php echo $place_selection->place_title;?>'); ?><?php echo $place_selection->place_title;?></option>
+            <?php }?>
+            <option value="">Others</option>
+          </select>
+         </div>
+        </div>
      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 forumPlaceDropdown ">
       <div class="form-group">
         <select class="form-control" id="catg1" name="sub_place_select">
@@ -76,8 +76,8 @@
         </select>
       </div>
     </div>
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ForumDescriptDesign">
- 	   <textarea class="form-control" rows="7" name='post' id="#" placeholder="Write Your Post" required></textarea> 
+       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ForumDescriptDesign">
+ 	 <textarea class="form-control" rows="7" name='post' id="#" placeholder="Write Your Post" required></textarea> 
  	   <button type="reset" class="btn btn-warning">Reset</button>
  	   <button type="submit" class="btn btn-primary">Post</button>
       </div>
